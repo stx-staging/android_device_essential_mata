@@ -16,3 +16,7 @@
 
 PRODUCT_MAKEFILES += \
     device/essential/mata/statix_mata.mk
+
+COMMON_LUNCH_CHOICES += \
+    statix_mata-userdebug \
+    statix_mata-eng
