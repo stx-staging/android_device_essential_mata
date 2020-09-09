@@ -34,7 +34,6 @@ on charger
     setprop persist.sys.usb.config mass_storage
     start hvdcp_opti
     setprop sys.usb.configfs 1
-    load_system_props
     write /sys/class/leds/lcd-backlight/brightness  80
     write /sys/devices/system/cpu/cpu1/online 0
     write /sys/devices/system/cpu/cpu2/online 0
@@ -307,7 +306,7 @@ on fs
     chmod 0770 /mnt/vendor/persist/rfs/apq/gnss
     chmod 0770 /mnt/vendor/persist/hlos_rfs
 
-    restorecon_recursive --force /mnt/vendor/persist
+    restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
     chown system system /mnt/vendor/persist/rfs/shared
     chown system system /mnt/vendor/persist/rfs/msm
