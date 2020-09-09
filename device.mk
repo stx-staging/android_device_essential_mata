@@ -113,6 +113,7 @@ $(call inherit-product, build/target/product/verity.mk)
 # VNDK
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_TARGET_VNDK_VERSION := 29
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Wifi Display
 PRODUCT_PACKAGES += \
