@@ -148,7 +148,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.2-service.clearkey \
     move_widevine_data.sh \
-    libprotobuf-cpp-lite.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -297,6 +296,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     device/essential/mata/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# Protobuf
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so
 
 # QCOM
 PRODUCT_COPY_FILES += \
