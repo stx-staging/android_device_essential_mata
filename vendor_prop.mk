@@ -109,7 +109,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enforce privapp-permissions whitelist
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.control_privapp_permissions=log
+    ro.control_privapp_permissions=enforce
 
 # Factory reset partition
 PRODUCT_PROPERTY_OVERRIDES += \
