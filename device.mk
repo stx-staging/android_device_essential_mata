@@ -111,6 +111,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor
 
+# Blur
+TARGET_USES_BLUR := true
+
 # Camera
 PRODUCT_COPY_FILES += \
     device/essential/mata/configs/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
